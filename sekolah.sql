@@ -15,7 +15,7 @@ CREATE TABLE nilai (
     nilai INT
 );
 
---menambahkan values ke tabel siswa (nama, umur, jurusan siswa) dan tabel nilai (siswa_id, mata_pelajaran_nilai)
+--menambahkan values ke tabel siswa (nama, umur, jurusan siswa) dan tabel nilai (siswa_id, mata_pelajaran,nilai)
 INSERT INTO siswa (nama, umur, jurusan) VALUES
 ('Rapli', 16, 'IPA'),
 ('Hadid', 17, 'IPS'),
