@@ -52,3 +52,4 @@ WHERE siswa_id = 1 AND mata_pelajaran = 'Matematika';
 
 delete from nilai where siswa_id = 2 and mata_pelajaran ='Matematika'
 
+-- uyjhgfd
