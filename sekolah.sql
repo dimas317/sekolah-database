@@ -1,4 +1,4 @@
-
+-- Membuat database sekolah dan tabel siswa-nilai
 CREATE DATABASE sekolah;
 
 CREATE TABLE siswa (
@@ -15,6 +15,7 @@ CREATE TABLE nilai (
     nilai INT
 );
 
+--menambahkan values ke tabel siswa (nama, umur, jurusan siswa) dan tabel nilai (siswa_id, mata_pelajaran_nilai)
 INSERT INTO siswa (nama, umur, jurusan) VALUES
 ('Rapli', 16, 'IPA'),
 ('Hadid', 17, 'IPS'),
@@ -33,6 +34,7 @@ INSERT INTO nilai (siswa_id, mata_pelajaran, nilai) VALUES
 (5, 'Ekonomi', 80),
 (5, 'Agama', 82);
 
+-- menambahkan query data (SELECT)
 SELECT * FROM siswa;
 
 SELECT * FROM siswa WHERE jurusan = 'IPA';
@@ -42,6 +44,7 @@ FROM siswa s
 JOIN nilai n ON s.id = n.siswa_id
 GROUP BY s.nama;
 
+-- menambahkan update siswa dan nilai
 UPDATE siswa
 SET jurusan = 'IPS'
 WHERE nama = 'Ardha';
@@ -51,5 +54,3 @@ SET nilai = 87
 WHERE siswa_id = 1 AND mata_pelajaran = 'Matematika';
 
 delete from nilai where siswa_id = 2 and mata_pelajaran ='Matematika'
-
--- uyjhgfd
